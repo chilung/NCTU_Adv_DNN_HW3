@@ -3,6 +3,10 @@ This is a github for NCTU course "Selected Topics in Visual Recognition using De
 I refer to facebook's contribution, detectron2.
 All of my homework was completed and can be executed in Google colab.
 
+# My Homework Program
 The program I made in Google colab is also based on facebook detectron2's colab tuturial program.
 
 [my homework colab](https://colab.research.google.com/drive/1UFly0z_NLrUSOfj9VG5hJWDbKzlg-z5E?usp=sharing)
+
+# Reproduce The Result
+
