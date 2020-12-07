@@ -17,10 +17,6 @@ This program is a self sustained program. The procedure is highlighted here:
 4. You can see the length of train dataset is 1349 and the list of 20 categories by checking coco.cats.
 5. Two functions datasetCateId_2_modelCateId and modelCateId_2_datasetCateId are used to transfer between dataset category id and model category id. It is because dataset category id is 1 ~ 20 and model category id should be 0 ~ 19.
 6. In detectron2, the dataset should be registered, such as:
-get_tiny_voc_dicts
 <pre><code>DatasetCatalog.register('tiny_voc_train', lambda: get_tiny_voc_dicts('./train_images', './pascal_train.json', 'train'))
 MetadataCatalog.get('tiny_voc_train').thing_classes = tiny_voc_classes('./train_images', './pascal_train.json') </code></pre>
-
-train_dataset_dicts = get_tiny_voc_dicts('./train_images', './pascal_train.json', 'train')
-train_metadata = MetadataCatalog.get('tiny_voc_train')
-
+In get_tiny_voc_dicts, we split the 1349 samples in train dataset into train dataset (1079 samples) and validate dataset (270 samples) and specify by the third parameter 'train' or 'valid'.
