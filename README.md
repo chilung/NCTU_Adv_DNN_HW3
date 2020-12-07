@@ -18,8 +18,8 @@ This program is a self sustained program. The procedure is highlighted here:
 5. Two functions datasetCateId_2_modelCateId and modelCateId_2_datasetCateId are used to transfer between dataset category id and model category id. It is because dataset category id is 1 ~ 20 and model category id should be 0 ~ 19.
 6. In detectron2, the dataset should be registered, such as:
 get_tiny_voc_dicts
-<code>DatasetCatalog.register('tiny_voc_train', lambda: get_tiny_voc_dicts('./train_images', './pascal_train.json', 'train'))
-MetadataCatalog.get('tiny_voc_train').thing_classes = tiny_voc_classes('./train_images', './pascal_train.json') </code>
+<pre><code>DatasetCatalog.register('tiny_voc_train', lambda: get_tiny_voc_dicts('./train_images', './pascal_train.json', 'train'))
+MetadataCatalog.get('tiny_voc_train').thing_classes = tiny_voc_classes('./train_images', './pascal_train.json') </code></pre>
 
 train_dataset_dicts = get_tiny_voc_dicts('./train_images', './pascal_train.json', 'train')
 train_metadata = MetadataCatalog.get('tiny_voc_train')
