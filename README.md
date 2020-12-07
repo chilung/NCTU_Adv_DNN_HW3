@@ -13,3 +13,4 @@ This program is a self sustained program. The procedure is highlighted here:
 
 1. Install pytorch and detectron.
 2. After detectron2 installed, the runtime needs to be restarted. Thus you can see a code exit(0) to restart the runtime and an error message: "你的工作階段因不明原因而異常終止。" shown. This is a correct result. There is no problem to go on executing the program.
+3. The program will download the dataset, including train_images.zip, pascal_train.json, test_images.zip, test.json. And train_images.zip amd test_images.zip will be automatically unzipped into ./train_images and ./test_images.
