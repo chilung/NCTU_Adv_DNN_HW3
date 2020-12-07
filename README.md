@@ -23,4 +23,4 @@ MetadataCatalog.get('tiny_voc_train').thing_classes = tiny_voc_classes('./train_
 8. In Inference & evaluation using the trained model section. I have uploaded 7 models I trained in my top mAP list: mAP 64.238% in epoch 48999, mAP 64.129% in epoch 41999, mAP 63.109% in epoch 33999, mAP 62.736% in epoch 61999, mAP 61.604% in epoch 56999, mAP 61.367% in epoch 52999 and mAP 60.899% in epoch 63999.
 9. In the colab, I use mAP 64.238% in epoch 48999, `model_0048999.pth`, as a demo model.
 10. In Prepare submission file section, each instance is recorded in list of `image_id`, `score`, `category_id` and `segmentation`. The instance mask map is converted by the function `binary_mask_to_rle` and is put into the variable `segmentation`.
-11. The final submission file can be obtained from the file of ./output/submission.json.
+11. The final submission file can be obtained from the file of `./output/submission.json`.
