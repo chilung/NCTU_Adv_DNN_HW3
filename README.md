@@ -26,3 +26,4 @@ MetadataCatalog.get('tiny_voc_train').thing_classes = tiny_voc_classes('./train_
 11. The final submission file can be obtained from the file of `./output/submission.json`.
 12. In Train section, we will resume the train work from epoch 63999.
 13. In train phase, data sugmentation of `RandomFlip`, `RandomBrightness`, `RandomContrast`, `RandomLighting` and `RandomRotation` are used.
+14. The 1349 samples of train dataset are used to validate the mAP and submission jason format as well.
