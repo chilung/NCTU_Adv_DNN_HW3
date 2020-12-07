@@ -20,3 +20,5 @@ This program is a self sustained program. The procedure is highlighted here:
 <pre><code>DatasetCatalog.register('tiny_voc_train', lambda: get_tiny_voc_dicts('./train_images', './pascal_train.json', 'train'))
 MetadataCatalog.get('tiny_voc_train').thing_classes = tiny_voc_classes('./train_images', './pascal_train.json') </code></pre>
 7. In get_tiny_voc_dicts, we split the 1349 samples in train dataset into train dataset (1079 samples) and validate dataset (270 samples) and specify by the third parameter 'train' or 'valid'.
+8. In Inference & evaluation using the trained model section. I have uploaded 7 models I trained in my top mAP list: mAP 64.238% in epoch 48999, mAP 64.129% in epoch 41999, mAP 63.109% in epoch 33999, mAP 62.736% in epoch 61999, mAP 61.604% in epoch 56999, mAP 61.367% in epoch 52999 and mAP 60.899% in epoch 63999.
+9. In the colab, I use mAP 64.238% in epoch 48999, 'model_0048999.pth', as a demo model.
