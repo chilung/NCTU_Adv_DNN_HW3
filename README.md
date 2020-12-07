@@ -19,4 +19,4 @@ This program is a self sustained program. The procedure is highlighted here:
 6. In detectron2, the dataset should be registered, such as:
 <pre><code>DatasetCatalog.register('tiny_voc_train', lambda: get_tiny_voc_dicts('./train_images', './pascal_train.json', 'train'))
 MetadataCatalog.get('tiny_voc_train').thing_classes = tiny_voc_classes('./train_images', './pascal_train.json') </code></pre>
-In get_tiny_voc_dicts, we split the 1349 samples in train dataset into train dataset (1079 samples) and validate dataset (270 samples) and specify by the third parameter 'train' or 'valid'.
+7. In get_tiny_voc_dicts, we split the 1349 samples in train dataset into train dataset (1079 samples) and validate dataset (270 samples) and specify by the third parameter 'train' or 'valid'.
