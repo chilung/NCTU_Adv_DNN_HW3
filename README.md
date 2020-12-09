@@ -24,6 +24,6 @@ MetadataCatalog.get('tiny_voc_train').thing_classes = tiny_voc_classes('./train_
 9. In the colab, I use mAP 45.523% in epoch 113999, `model_0113999.pth`, as a demo model.
 10. In Prepare submission file section, each instance is recorded in the list of `image_id`, `score`, `category_id` and `segmentation`. The instance mask map is converted by the function `binary_mask_to_rle` and is put into the variable `segmentation`.
 11. The final submission file can be obtained from the file of `./output/submission_113.json`.
-12. In Train section, we can train from scratch or resume the train work from epoch 66999.
+12. In Train section, we can train from scratch or resume the train work from epoch 120999.
 13. In train phase, data augmentation of `RandomFlip`, `RandomBrightness`, `RandomContrast`, `RandomLighting` and `RandomRotation` are used.
 14. The 1349 samples of train dataset are used to validate the mAP and submission jason format as well.
